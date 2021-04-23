@@ -1,8 +1,9 @@
 import cv2 as cv2
 import numpy as np
 
+# Estos valores deben cambiarse segun la imagen a estudiar.
 vg = 9
-vk = 23
+vk = 33
 
 original = cv2.imread('Imagenes/monedassoles.jpg')
 gris = cv2.cvtColor(original,cv2.COLOR_BGR2GRAY)
