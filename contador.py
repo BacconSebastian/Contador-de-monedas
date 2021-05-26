@@ -5,7 +5,7 @@ import numpy as np
 vg = 1
 vk = 3
 
-original = cv2.imread('Imagenes/monedassoles.jpg')
+original = cv2.imread('Imagenes/monedas.jpg')
 gris = cv2.cvtColor(original,cv2.COLOR_BGR2GRAY)
 gauss = cv2.GaussianBlur(gris, (vg,vg), 0)
 canny = cv2.Canny(gauss, 60, 100)
